@@ -292,10 +292,13 @@ ul {
     border-radius: 4px;
     margin-right: 30px;
 }
+.section-5 ul li:last-child {
+    margin-right: 0;
+}
 .section-5 ul .link:last-child {
     margin-right: 0;
 }
-.section-5 ul li .ico {
+.section-5 ul li svg {
     background-position: center;
     background-repeat: no-repeat;
 }
