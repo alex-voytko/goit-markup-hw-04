@@ -279,9 +279,6 @@ ul {
     background-position: center;
     background-repeat: no-repeat;
 }
-.section-5 {
-
-}
 .section-5 ul {
     display: flex;
 }
@@ -295,9 +292,6 @@ ul {
 .section-5 ul li:last-child {
     margin-right: 0;
 }
-.section-5 ul .link:last-child {
-    margin-right: 0;
-}
 .section-5 ul li svg {
     background-position: center;
     background-repeat: no-repeat;
@@ -305,7 +299,7 @@ ul {
 .section-5 ul li:hover {
     border: 1px solid var(--accent-color);
 }
-.section-5 ul li:hover .ico {
+.section-5 ul li:hover svg {
     fill: var(--accent-color);
 }
 .section-5 ul a {
