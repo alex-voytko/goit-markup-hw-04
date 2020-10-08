@@ -261,13 +261,20 @@ ul {
     justify-content: center;    
 }
 .section-4 .social-links-icons li {
-    content: "";
     width: 44px;
     height: 44px;
-    background-repeat: no-repeat;
-    background-position: center;
     border-radius: 50%;
     margin-right: 10px;
+}
+.section-4 .social-links-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+}
+.section-4 .sm-icon {
+    fill: red;
 }
 .section-4 .social-links-icons li:nth-child(4) {
     margin-right: 0;
@@ -275,14 +282,16 @@ ul {
 .section-4 .social-links-icons li:hover {
     background-color: var(--accent-color);
 }
-.section-4 .social-links-icons svg {
-    background-position: center;
-    background-repeat: no-repeat;
+.section-4 .social-links-icons li:hover svg {
+    fill: var(--title-text-color);
 }
 .section-5 ul {
     display: flex;
 }
 .section-5 ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 170px;
     height: 90px;
     border: 1px solid #AFB1B8;
@@ -292,14 +301,12 @@ ul {
 .section-5 ul li:last-child {
     margin-right: 0;
 }
-.section-5 ul li svg {
-    background-position: center;
-    background-repeat: no-repeat;
+.section-5 .icon {
 }
-.section-5 ul li:hover {
+.section-5 li:hover {
     border: 1px solid var(--accent-color);
 }
-.section-5 ul li:hover svg {
+.section-5 .icon:hover .icon {
     fill: var(--accent-color);
 }
 .section-5 ul a {
