@@ -5,6 +5,7 @@
     --accent-color: #2196F3;
     --background-color: #F5F4FA;
     --contrast-color: #2F303A;
+    --icon-color: #afb1b8;
 }
 *,
 *::before,
@@ -87,20 +88,38 @@ ul {
     align-items: center;
     margin-left: auto;
 }
+.contacts-list div {
+    display: inline;
+}
+.contacts-list svg {
+    fill:  var(--icon-color);
+    margin-right: 10px;
+    background-position: center;
+}
+.contacts-list li:hover svg {
+    fill: var(--accent-color);
+}
 .contacts-list .item:last-child {
-    margin-left: 50px;
+    margin-left: 30px;
 }
 .contacts-list .link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.143;
     letter-spacing: 0.02em;
     color: var(--secondary-text-color);
+    list-style: none;
 }
 .contacts-list .link:hover,
 .contacts-list .link:focus {
     color: var(--accent-color);
     cursor: pointer;
+}
+.contacts-list:hover svg {
+    fill: var(--icon-color);
 }
 .section-1 {
     align-items: center;
@@ -253,6 +272,13 @@ ul {
     display: flex;
     justify-content: space-between;
 }
+.section-4 .team-list > li {
+    box-shadow: 
+    0px 1px 3px rgba(0, 0, 0, 0.12), 
+    0px 1px 1px rgba(0, 0, 0, 0.14), 
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
 .section-4 .social-links-icons {
     display: flex;
     background-repeat: no-repeat;
@@ -273,8 +299,8 @@ ul {
     width: 44px;
     height: 44px;
 }
-.section-4 .sm-icon {
-    fill: red;
+.section-4 svg {
+    fill: var(--icon-color);
 }
 .section-4 .social-links-icons li:nth-child(4) {
     margin-right: 0;
@@ -301,12 +327,13 @@ ul {
 .section-5 ul li:last-child {
     margin-right: 0;
 }
-.section-5 .icon {
+.section-5 svg {
+    fill: var(--icon-color);
 }
 .section-5 li:hover {
     border: 1px solid var(--accent-color);
 }
-.section-5 .icon:hover .icon {
+.section-5 li:hover svg {
     fill: var(--accent-color);
 }
 .section-5 ul a {
