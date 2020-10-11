@@ -417,10 +417,12 @@ address li:last-child {
 .footer-social-links li:first-child {
     margin-left: 0;
 }
-.footer-social-links li:hover,
-.footer-social-links li a:focus {
+.footer-social-links li:hover {
     background-color: var(--accent-color);
     cursor: pointer;
+}
+.footer-social-links li a:focus {
+    fill: var(--accent-color);
 }
 /* portfolio html */
 .our-works-section {
